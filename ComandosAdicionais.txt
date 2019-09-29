@@ -1,0 +1,6 @@
+> yarn init -y //Criando um package.json
+> code. //abrindo com o vscode
+> yarn add express //adicionando a dependencia express
+> node index.js //Subindo servidor
+> yarn add nodemon -D //Depencia para subir automaticamente
+> yarn nodemon index.js //Rodando servidor
