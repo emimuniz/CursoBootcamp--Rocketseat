@@ -24,8 +24,8 @@ server.use((req, res, next) => {
 });
 
 function checkIdExists(req, res, next) {
-  const id = tarefas[req.params.id];
-  const idTarefa = tarefas.findIndex(p => p.id === id);
+  const { id } = req.params;
+  const idTarefa = tarefas.find(p => p.id === id);
   if (!idTarefa) {
     return res.status(400).json({
       error: "Insira um id Valido"
